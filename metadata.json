@@ -1,0 +1,6 @@
+{
+  "name": "Vijay Rural Engineering College",
+  "description": "Full-fledged campus portal for Vijay Rural Engineering College (VREC) Nizamabad, featuring department highlights, placement tracker, admissions, interactive student notice board, and an AI Academic Companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

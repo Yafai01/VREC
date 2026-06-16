@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* Custom collegiate typography pairings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@350;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom animations and visual keyframes */
+@keyframes marquee {
+  0% {
+    transform: translate3d(20%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-[marquee_25s_linear_infinite] {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* High fidelity global styling enhancements */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling for conversational lists and notices */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

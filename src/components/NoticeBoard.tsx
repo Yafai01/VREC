@@ -14,11 +14,11 @@ const INITIAL_NOTICES: Notice[] = [
   },
   {
     id: "notice-2",
-    title: "Capgemini Recruitment Drive for 2026 Graduating Batch",
+    title: "Campus Recruitment Drive for 2026 Graduating Batch",
     category: "Placement",
     date: "2026-06-15",
-    content: "Capgemini is visiting VREC for a virtual pool drive. Eligible branches: CSE, CSE-AIML, CSE-DS, and ECE with a minimum CGPA of 6.2 and no active backlogs. Submit your updated resume and complete registration on the T&P Portal by this Friday.",
-    author: "Prof. S. Mahesh (Training & Placement Head)",
+    content: "A software services company is conducting a virtual pool drive (sample notice). Eligible branches: CSE, CSE-AIML, CSE-DS, and ECE with a minimum CGPA of 6.2 and no active backlogs. Submit your updated resume and complete registration on the T&P Portal by this Friday.",
+    author: "Training & Placement Cell",
     isImportant: true,
   },
   {

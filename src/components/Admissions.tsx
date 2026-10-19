@@ -195,7 +195,7 @@ export default function Admissions() {
                 <p className="text-xs text-slate-500 mt-1">
                   Assistance with certificate verification, slot bookings, and reporting procedures.
                 </p>
-                <p className="text-xs font-bold text-slate-800 mt-2 hover:text-slate-950">+91 8462-225577</p>
+                <p className="text-xs font-bold text-slate-800 mt-2 hover:text-slate-950">+91 00000 00000</p>
               </div>
             </div>
 
@@ -206,7 +206,7 @@ export default function Admissions() {
                 <p className="text-xs text-slate-500 mt-1">
                   Special scholarship slots for top EAMCET scorers and local rural talents.
                 </p>
-                <p className="text-xs font-bold text-slate-800 mt-2 hover:text-slate-950">scholarships@vrec.ac.in</p>
+                <p className="text-xs font-bold text-slate-800 mt-2 hover:text-slate-950">scholarships@example.edu</p>
               </div>
             </div>
           </div>
@@ -365,7 +365,7 @@ export default function Admissions() {
               </div>
 
               <p className="text-xs text-slate-400 leading-relaxed px-4">
-                Please save this reference key. Physical reporting and certificate slots are open. Contact admissions desk directly at +91 8462-225577.
+                Please save this reference key. Physical reporting and certificate slots are open. Contact the admissions desk at +91 00000 00000.
               </p>
 
               <button

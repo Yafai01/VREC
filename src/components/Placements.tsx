@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { PlacementStat } from "../types";
 import { Award, CheckCircle, TrendingUp, Cpu, Flame, BarChart3, HelpCircle } from "lucide-react";
 
+// Illustrative sample values used only to demonstrate the chart layout.
+// They are not real placement figures for any institution.
 const STATS: PlacementStat[] = [
   { year: "2021", placedPercentage: 74, offersCount: 280, highestPackage: "7.5 LPA", averagePackage: "3.2 LPA" },
   { year: "2022", placedPercentage: 81, offersCount: 345, highestPackage: "9.0 LPA", averagePackage: "3.8 LPA" },
@@ -11,36 +13,34 @@ const STATS: PlacementStat[] = [
 ];
 
 const RECRUITERS = [
-  { name: "TCS", logo: "💻", description: "Tata Consultancy Services Ltd, elite recruitments" },
-  { name: "Infosys", logo: "🔷", description: "Infosys Global Systems systems engineer intake" },
-  { name: "Wipro", logo: "🟣", description: "Wipro Turbo & Elite development tracks" },
-  { name: "Capgemini", logo: "🔵", description: "Capgemini India software associate pipelines" },
-  { name: "Cognizant", logo: "🟧", description: "Cognizant GenC developer recruitment rounds" },
-  { name: "DXC Technology", logo: "🟩", description: "DXC Enterprise service deployment engineering" },
-  { name: "Tech Mahindra", logo: "🔴", description: "Tech Mahindra communication engineering profiles" }
+  { name: "IT Services", logo: "💻", description: "Software engineer and associate developer roles" },
+  { name: "Product Companies", logo: "🔷", description: "Full-stack, cloud and data engineering roles" },
+  { name: "Consulting & Analytics", logo: "🟣", description: "Business analyst and data analyst roles" },
+  { name: "Core Electronics", logo: "🔵", description: "Embedded systems, VLSI and telecom roles" },
+  { name: "Manufacturing", logo: "🟧", description: "Design, production and quality engineering roles" },
+  { name: "Infrastructure", logo: "🟩", description: "Site, structural and project engineering roles" },
+  { name: "Power & Energy", logo: "🔴", description: "Electrical maintenance and renewable energy roles" }
 ];
 
+// Sample testimonials written for this demo. They do not quote real students.
 const TESTIMONIALS = [
   {
-    name: "G. Preethi",
-    branch: "B.Tech (CSE), Class of 2025",
-    company: "TCS (Digital Developer)",
-    package: "7.0 LPA",
-    quote: "The VREC Placement cell started coding bootcamps for us in the 2nd year itself. The mock interviews and quantitative training made crack the TCS Digital screening smooth!"
+    name: "Sample Student",
+    branch: "B.Tech (CSE)",
+    company: "Software Developer",
+    quote: "Coding bootcamps that start in the second year, along with mock interviews and aptitude training, help students prepare well ahead of campus recruitment."
   },
   {
-    name: "Mohammad Fahad",
-    branch: "B.Tech (ECE), Class of 2024",
-    company: "Capgemini (Software Analyst)",
-    package: "4.2 LPA",
-    quote: "Being from ECE, I was worried about software placements, but the customized full-stack developer workshops curated by our college filled the gaps perfectly."
+    name: "Sample Student",
+    branch: "B.Tech (ECE)",
+    company: "Software Analyst",
+    quote: "Students from non-CSE branches can use full-stack development workshops to build the skills needed for software roles."
   },
   {
-    name: "T. Naresh",
-    branch: "B.Tech (Mechanical), Class of 2025",
-    company: "Jindal Steel & Power",
-    package: "5.5 LPA",
-    quote: "Superb alignment with core and computational manufacturing topics allowed me to score highly in my technical rounds. Truly thankful to VREC faculty!"
+    name: "Sample Student",
+    branch: "B.Tech (Mechanical)",
+    company: "Core Engineering",
+    quote: "Coverage of both core and computational manufacturing topics helps students prepare for technical interview rounds in core industries."
   }
 ];
 
@@ -56,7 +56,7 @@ export default function Placements() {
           Promising Placements & Career Growth
         </h2>
         <p className="mt-2 text-slate-500 max-w-3xl">
-          Vijay Rural Engineering College is a focal point of young software and mechanical minds in the district. Our active Training and Placement Cell works 365 days to ensure corporate-ready skills.
+          The Training and Placement Cell helps students build industry-ready skills through aptitude training, technical workshops and interview preparation.
         </p>
       </div>
 
@@ -68,9 +68,9 @@ export default function Placements() {
             <TrendingUp className="h-7 w-7" />
           </div>
           <div>
-            <div className="text-xs uppercase font-bold text-red-200 tracking-wider">Placement Rate</div>
-            <div className="text-3xl font-black mt-1">91%</div>
-            <div className="text-xs text-red-100/80 mt-1">Highest among local Nizamabad colleges</div>
+            <div className="text-xs uppercase font-bold text-red-200 tracking-wider">Early Preparation</div>
+            <div className="text-2xl font-black mt-1">From 2nd Year</div>
+            <div className="text-xs text-red-100/80 mt-1">Aptitude, soft skills and coding practice</div>
           </div>
         </div>
 
@@ -79,9 +79,9 @@ export default function Placements() {
             <Award className="h-7 w-7" />
           </div>
           <div>
-            <div className="text-xs uppercase font-bold text-slate-300 tracking-wider">Highest Package</div>
-            <div className="text-3xl font-black mt-1 text-amber-400">12.5 LPA</div>
-            <div className="text-xs text-slate-300 mt-1">Lakhs Per Annum • Capgemini Tech Drive</div>
+            <div className="text-xs uppercase font-bold text-slate-300 tracking-wider">Interview Readiness</div>
+            <div className="text-2xl font-black mt-1 text-amber-400">Mock Interviews</div>
+            <div className="text-xs text-slate-300 mt-1">Technical and HR rounds with feedback</div>
           </div>
         </div>
 
@@ -90,9 +90,9 @@ export default function Placements() {
             <Cpu className="h-7 w-7" />
           </div>
           <div>
-            <div className="text-xs uppercase font-black text-amber-950 tracking-wider">Average Package</div>
-            <div className="text-3xl font-black mt-1">4.8 LPA</div>
-            <div className="text-xs text-amber-950 mt-1">For B.Tech CSE & ECE branches</div>
+            <div className="text-xs uppercase font-black text-amber-950 tracking-wider">Industry Exposure</div>
+            <div className="text-2xl font-black mt-1">Workshops</div>
+            <div className="text-xs text-amber-950 mt-1">Hands-on sessions across all branches</div>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ export default function Placements() {
               <BarChart3 className="h-5 w-5 text-red-800" />
               Annual Recruitments & Placements Growth
             </h3>
-            <span className="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded font-bold uppercase">Dynamic Metric</span>
+            <span className="text-[10px] bg-amber-100 text-amber-800 px-2 py-1 rounded font-bold uppercase">Sample Data</span>
           </div>
 
           {/* SVG Custom Rendered Bar Chart */}
@@ -167,7 +167,7 @@ export default function Placements() {
           </div>
 
           <p className="text-xs text-slate-400 text-center font-semibold mt-4">
-            💡 Hover over the college placement bars to view specific recruitment quantities and packages!
+            Illustrative sample values for demonstration only, not actual placement results. Hover over a bar for details.
           </p>
         </div>
 
@@ -175,7 +175,7 @@ export default function Placements() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-2xl p-6">
           <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider mb-5 flex items-center gap-2">
             <Flame className="h-4.5 w-4.5 text-amber-500" />
-            VREC Recruiting Partners
+            Career Paths by Sector
           </h3>
 
           <div className="space-y-3.5">
@@ -201,8 +201,11 @@ export default function Placements() {
       {/* Testimonials */}
       <div>
         <h3 className="text-xl font-black text-slate-900 mb-6 text-center md:text-left">
-          Alumni Success Stories
+          Student Perspectives
         </h3>
+        <p className="text-xs text-slate-400 font-semibold mb-6 -mt-4 text-center md:text-left">
+          Sample testimonials for demonstration purposes.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {TESTIMONIALS.map((test, index) => (
@@ -226,7 +229,6 @@ export default function Placements() {
                   <span className="inline-block bg-emerald-50 border border-emerald-200 text-emerald-800 text-[10px] font-black px-2 py-0.5 rounded">
                     {test.company}
                   </span>
-                  <p className="text-[9px] text-slate-400 font-black mt-0.5">{test.package} Offer</p>
                 </div>
               </div>
             </div>

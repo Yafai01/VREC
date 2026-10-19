@@ -81,7 +81,7 @@ export default function Chatbot({ isFloatingOnly = false }: ChatbotProps) {
       const errorMsg: ChatMessage = {
         id: `err-${Date.now()}`,
         role: "assistant",
-        content: "⚠️ Connection slight delay. I am running in local fallback context. Please make sure that standard server environment variables are initialized properly. VREC Counseling Code is **VJAY** and B.Tech direct helpline is +91-8462-223456.",
+        content: "⚠️ Connection slight delay. I am running in local fallback context. Please make sure that standard server environment variables are initialized properly. VREC Counseling Code is **VJAY** and for other queries please contact the admissions desk.",
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
       setMessages((prev) => [...prev, errorMsg]);

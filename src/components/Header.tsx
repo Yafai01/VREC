@@ -27,11 +27,11 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           <div className="flex flex-wrap items-center gap-4">
             <span className="flex items-center gap-1.5">
               <Phone className="h-3.5 w-3.5 text-amber-200" />
-              <span className="hover:text-amber-100 transition-colors">+91 8462-223456</span>
+              <span className="hover:text-amber-100 transition-colors">+91 00000 00000</span>
             </span>
             <span className="flex items-center gap-1.5">
               <Mail className="h-3.5 w-3.5 text-amber-200" />
-              <span className="hover:text-amber-100 transition-colors">info@vrec.ac.in</span>
+              <span className="hover:text-amber-100 transition-colors">info@example.edu</span>
             </span>
           </div>
           <div className="flex items-center gap-3">

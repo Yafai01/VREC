@@ -2,7 +2,7 @@
 
 A prototype campus website for Vijay Rural Engineering College (VREC), Nizamabad. It's a single-page React app with sections for departments, admissions, placements, campus life and a notice board. It also has an AI counselor chatbot that runs on Google Gemini through a small Express backend.
 
-> This is a prototype. Figures, notices, testimonials and other content are hard-coded in the source and should be checked before being treated as official information.
+> **Demo content notice:** this is an unofficial prototype and is not affiliated with or endorsed by the college. Staff are shown by role only, and all phone numbers and email addresses (for example `+91 00000 00000`, `hod.cse@example.edu`) are placeholders. Placement charts and testimonials use illustrative sample data, and notices are examples. None of it should be treated as official information.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)
@@ -11,9 +11,9 @@ A prototype campus website for Vijay Rural Engineering College (VREC), Nizamabad
 
 ## Features
 
-- **Departments**: engineering departments with their heads, intake and highlights.
+- **Departments**: engineering departments with intake, labs, curriculum highlights and a placeholder department contact.
 - **Admissions**: eligibility, counselling and fee information, plus an enquiry form. Submissions are saved to the browser's `localStorage`.
-- **Placements**: recruiter highlights and student placement stories.
+- **Placements**: placement preparation overview, career paths by sector, and a chart and testimonials built on sample data.
 - **Campus life**: facilities and student activities.
 - **Notice board**: notices you can search and filter by category, and add or delete. Notices are stored in `localStorage`.
 - **AI counselor**: a chat assistant served from `/api/chat`. It uses Gemini with a system prompt about the college. Without a `GEMINI_API_KEY`, it falls back to built-in keyword-based demo replies.

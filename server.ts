@@ -25,10 +25,10 @@ College Profile & Context:
 
 Academics & Specializations:
 1. B.Tech Branches & Intakes:
-   - Computer Science & Engineering (CSE) - 180 Seats (HOD: Dr. Shanthi Kumar)
-   - CSE in Artificial Intelligence & Machine Learning (AI & ML) - 60 Seats (HOD: Prof. Venkatesh G.)
+   - Computer Science & Engineering (CSE) - 180 Seats
+   - CSE in Artificial Intelligence & Machine Learning (AI & ML) - 60 Seats
    - CSE in Data Science (DS) - 60 Seats
-   - Electronics & Communication Engineering (ECE) - 60 Seats (HOD: Dr. J. Rakesh)
+   - Electronics & Communication Engineering (ECE) - 60 Seats
    - Civil Engineering (CE) - 60 Seats
    - Electrical & Electronics Engineering (EEE) - 30 Seats
    - Mechanical Engineering (ME) - 30 Seats
@@ -46,23 +46,21 @@ Admissions & Fees:
 - Fee Structure: Approx INR 55,000 to INR 75,000/year under Convener Quota (depending on latest state fee regulatory committee). Management quota fee details and seat availability queries should be directed to the Admissions Office.
 - Scholarships: Full tuition fee reimbursement (RTF) as per Government of Telangana criteria for eligible SC/ST, BC, and EBC candidates.
 
-Placements Achievements:
+Placements:
 - Placement Cell provides soft skills, quantitative aptitude, and core coding boot camps from the 2nd year onwards.
-- ~85% of eligible students placed annually.
-- Top partners: TCS, Wipro, Infosys, Capgemini, Capgemini, Cognizant, DXC Technology, Tech Mahindra, Mindtree.
-- Highest Package: 12 LPA. Average Package: 4.5 LPA.
+- This assistant does not have verified placement statistics, package figures or recruiter lists. If asked, explain that and direct the user to the official Training & Placement Cell.
 
 Campus & Infrastructure:
 - Hostels: Separate secured campus hostels for boys and girls with study halls, hygiene-focused dining, and round-the-clock wardens.
 - Sports: Large grounds for Cricket and Football, active courts for Basketball, Volleyball, and Badminton, plus an indoor arena for Table Tennis, Carrom, and Chess.
-- Transport: College operates 15+ buses covering Nizamabad city, Armoor, Bodhan, Kamareddy, and other nearby sectors.
-- Library: Central library with 45,000+ volumes, 120 print journals, and e-learning resources.
-- Computing: High-end Computer Centers with 100 Mbps fiber internet connectivity.
+- Transport: College buses cover Nizamabad city, Armoor, Bodhan, Kamareddy, and other nearby areas.
+- Library: Central library with textbooks, journals, and e-learning resources.
+- Computing: Computer centers with internet connectivity.
 
 Guidelines for Chat:
 - If asked custom/out of text questions, relate with engineering, student advice, study tips, or tech careers, keeping VREC at the center of excellence.
 - Always be polite, structured, and use lists for readability.
-- Never make up information. If unsure, tell the user to contact the general VREC Desk at info@vrec.ac.in or call +91-8462-223456.`;
+- Never make up information, including names of staff, phone numbers, email addresses or statistics. If unsure, tell the user to contact the college office directly through its official website.`;
 
 // Lazy initialize Gemini client to avoid crashes if API key is not present
 function getGeminiClient() {
@@ -101,9 +99,9 @@ app.post("/api/chat", async (req, res) => {
       } else if (lowerMsg.includes("branch") || lowerMsg.includes("course") || lowerMsg.includes("cse") || lowerMsg.includes("department")) {
         reply += "We offer excellent B.Tech branches: CSE (180 seats), CSE in AI & ML (60 seats), CSE in Data Science (60 seats), ECE (60 seats), Civil Engineering (60 seats), EEE (30 seats), and Mechanical Engineering (30 seats). High-tech labs and digital infrastructure are provided for each department.";
       } else if (lowerMsg.includes("placement") || lowerMsg.includes("job") || lowerMsg.includes("salary") || lowerMsg.includes("recruiter")) {
-        reply += "VREC placements are highly proactive! Over 85% of students secure placements in companies like TCS, Infosys, Wipro, Capgemini, and Tech Mahindra. The highest package is 12 LPA and average package is around 4.5 LPA.";
+        reply += "The Training & Placement Cell runs aptitude, soft-skills and coding preparation from the 2nd year onwards, along with mock interviews. For verified placement statistics, please contact the Training & Placement Cell directly.";
       } else if (lowerMsg.includes("hostel") || lowerMsg.includes("facility") || lowerMsg.includes("bus") || lowerMsg.includes("transport")) {
-        reply += "VREC has secure separate hostels on campus for boys and girls with high security and balanced meals. We also run 15+ buses routing across Nizamabad, Armoor, Bodhan, and outskirts.";
+        reply += "VREC has secure separate hostels on campus for boys and girls with high security and balanced meals. College buses also run across Nizamabad, Armoor, Bodhan, and nearby areas.";
       } else {
         reply += "How can I help you today regarding Vijay Rural Engineering College? Feel free to ask about admissions, placements, departments, hostels, and academic schedules!";
       }

@@ -83,7 +83,7 @@ export default function App() {
                   </h1>
                   
                   <p className="text-sm sm:text-base text-slate-400 max-w-2xl leading-relaxed">
-                    Vijay Rural Engineering College (VREC) Nizamabad, promoted by the Vijay Rural Education Society, has engineered tech-talents since 1997. Built across 30+ lush acres, VREC combines JNTUH affiliation with robust coding, automation, and industry pipelines.
+                    Vijay Rural Engineering College (VREC) Nizamabad, promoted by the Vijay Rural Education Society, has engineered tech-talents since 1997. VREC combines JNTUH affiliation with robust coding, automation, and industry pipelines.
                   </p>
 
                   <div className="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -128,7 +128,7 @@ export default function App() {
                     </li>
                     <li className="flex gap-3 items-center">
                       <div className="h-6 w-6 rounded bg-red-950/60 flex items-center justify-center text-red-400 text-xs font-bold shrink-0">✓</div>
-                      <span>85%+ Placements with TCS, Capgemini & Wipro</span>
+                      <span>Dedicated Training & Placement Cell</span>
                     </li>
                   </ul>
 
@@ -157,18 +157,18 @@ export default function App() {
                   </div>
 
                   <div className="bg-white rounded-xl border border-slate-200 p-5 text-center shadow-xs">
-                    <div className="text-3xl font-black text-red-800">12.5 LPA</div>
-                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Highest Salary offer</div>
+                    <div className="text-3xl font-black text-red-800">7</div>
+                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">B.Tech Branches</div>
                   </div>
 
                   <div className="bg-white rounded-xl border border-slate-200 p-5 text-center shadow-xs">
-                    <div className="text-3xl font-black text-slate-900">30+</div>
-                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Lush Green Acres</div>
+                    <div className="text-3xl font-black text-slate-900">JNTUH</div>
+                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Affiliated University</div>
                   </div>
 
                   <div className="bg-white rounded-xl border border-slate-200 p-5 text-center shadow-xs">
-                    <div className="text-3xl font-black text-red-800">45,000+</div>
-                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Library volumes</div>
+                    <div className="text-3xl font-black text-red-800">AICTE</div>
+                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Approved Institution</div>
                   </div>
 
                 </div>
@@ -202,13 +202,13 @@ export default function App() {
                 </p>
                 
                 <p className="text-sm text-slate-650 leading-relaxed">
-                  Our dedicated Departmental blocks host weekly guest seminars, coding contests, and soft skill assessment units. This holistic matrix has gained VREC a reputable position in Nizamabad, ensuring consistent placements inside prestigious organizations over years.
+                  Our dedicated Departmental blocks host weekly guest seminars, coding contests, and soft skill assessment units. This holistic approach prepares students for both higher studies and industry careers.
                 </p>
 
                 <div className="pt-4 flex gap-4">
                   <div className="border-l-2 border-slate-900 pl-4 py-1">
-                    <p className="text-xs text-slate-400 font-bold">In-charge Counsel</p>
-                    <p className="text-sm font-black text-slate-900 leading-normal">Dr. K. Srinivas Rao, Ph.D</p>
+                    <p className="text-xs text-slate-400 font-bold">Administration</p>
+                    <p className="text-sm font-black text-slate-900 leading-normal">Office of the Principal</p>
                   </div>
                   <div className="border-l-2 border-slate-900 pl-4 py-1">
                     <p className="text-xs text-slate-400 font-bold">Affiliated University</p>
@@ -290,9 +290,9 @@ export default function App() {
             <h4 className="font-bold text-white text-xs uppercase tracking-wider">VREC Help Desk</h4>
             <div className="space-y-2">
               <p>📍 Rochis Valley, Manik Bhandar</p>
-              <p>📞 Phone: +91 8462-223456</p>
-              <p>✉️ Email: info@vrec.ac.in</p>
-              <p>💼 Placements: placements@vrec.ac.in</p>
+              <p>📞 Phone: +91 00000 00000</p>
+              <p>✉️ Email: info@example.edu</p>
+              <p>💼 Placements: placements@example.edu</p>
             </div>
           </div>
 
@@ -310,7 +310,7 @@ export default function App() {
         </div>
 
         <div className="mx-auto max-w-7xl pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-[11px] font-semibold text-slate-500 gap-4">
-          <p>© 2026 Vijay Rural Engineering College. All Indian Rights Reserved.</p>
+          <p>Unofficial prototype for demonstration. Contact details, notices and sample figures are placeholders.</p>
           <p>Affiliated to JNTU Hyderabad • Promoted by VIJAY RURAL EDUCATION SOCIETY</p>
         </div>
       </footer>

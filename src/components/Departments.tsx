@@ -8,9 +8,9 @@ const DEPARTMENTS: Department[] = [
     name: "Computer Science & Engineering",
     shortName: "CSE",
     intake: 180,
-    hod: "Dr. Shanthi Kumar, M.Tech, Ph.D",
-    hodContact: "+91 94412 34567",
-    email: "cse.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.cse@example.edu",
     labs: [
       "High-Performance Programming Lab (Intel Core i7 Systems)",
       "Advanced Database Systems Laboratory (Oracle, MongoDB)",
@@ -25,9 +25,9 @@ const DEPARTMENTS: Department[] = [
     name: "Artificial Intelligence & Machine Learning",
     shortName: "CSE (AI & ML)",
     intake: 60,
-    hod: "Prof. G. Venkatesh, M.Tech, (Ph.D)",
-    hodContact: "+91 94901 88776",
-    email: "aiml.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.aiml@example.edu",
     labs: [
       "GPU-Accelerated Neural Network Sandbox (NVIDIA GPUs)",
       "Python AI Research Center & AI Sandbox",
@@ -41,9 +41,9 @@ const DEPARTMENTS: Department[] = [
     name: "Computer Science (Data Science)",
     shortName: "CSE (DS)",
     intake: 60,
-    hod: "Mrs. K. Sumalatha, M.Tech",
-    hodContact: "+91 84620 11223",
-    email: "ds.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.ds@example.edu",
     labs: [
       "SQL/NoSQL Enterprise Datastore Sandbox",
       "R Programming and Statistical Analysis Lab",
@@ -57,9 +57,9 @@ const DEPARTMENTS: Department[] = [
     name: "Electronics & Communication Engineering",
     shortName: "ECE",
     intake: 60,
-    hod: "Dr. J. Rakesh, M.Tech, Ph.D",
-    hodContact: "+91 94401 54321",
-    email: "ece.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.ece@example.edu",
     labs: [
       "Microprocessor Interface & Embedded Systems Lab",
       "VLSI Design & Hardware Description Languages Lab",
@@ -74,9 +74,9 @@ const DEPARTMENTS: Department[] = [
     name: "Civil Engineering",
     shortName: "CIVIL",
     intake: 60,
-    hod: "Mr. Mohammad Ali, M.Tech, MIE",
-    hodContact: "+91 90520 99887",
-    email: "civil.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.civil@example.edu",
     labs: [
       "Geotechnical and Soil Testing Lab",
       "Concrete Technology & Compression testing setups",
@@ -91,9 +91,9 @@ const DEPARTMENTS: Department[] = [
     name: "Electrical & Electronics Engineering",
     shortName: "EEE",
     intake: 30,
-    hod: "Mr. B. Rajesh, M.Tech",
-    hodContact: "+91 99080 33445",
-    email: "eee.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.eee@example.edu",
     labs: [
       "Electrical Machines Lab (DC/AC Induction Machinery)",
       "Power Electronics & Control Systems Center",
@@ -107,9 +107,9 @@ const DEPARTMENTS: Department[] = [
     name: "Mechanical Engineering",
     shortName: "MECH",
     intake: 30,
-    hod: "Dr. K. Srinivas, Ph.D, FIE",
-    hodContact: "+91 94405 99221",
-    email: "mech.hod@vrec.ac.in",
+    hod: "Head of Department",
+    hodContact: "+91 00000 00000",
+    email: "hod.mech@example.edu",
     labs: [
       "Thermal Engineering and Fuels Lab",
       "CAD/CAM Center (with CNC Trainer lathes)",
@@ -241,14 +241,14 @@ export default function Departments() {
               </div>
             </div>
 
-            {/* HOD / Faculty Authority Details Box */}
+            {/* Department Office Contact Box */}
             <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-xl p-5 text-white flex flex-col sm:flex-row gap-5 items-center justify-between shadow-inner">
               <div className="flex items-center gap-4">
-                <div className="h-14 w-14 rounded-full bg-slate-700 border-2 border-amber-400 flex items-center justify-center text-lg font-black text-amber-400 shadow-md">
-                  {selectedDept.hod.split(" ")[1]?.charAt(0) || "H"}
+                <div className="h-14 w-14 rounded-full bg-slate-700 border-2 border-amber-400 flex items-center justify-center text-amber-400 shadow-md">
+                  <GraduationCap className="h-7 w-7" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Head of Department</div>
+                  <div className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Department Office</div>
                   <div className="text-base font-bold text-white">{selectedDept.hod}</div>
                   <div className="text-xs text-slate-300">Department of {selectedDept.shortName}</div>
                 </div>
@@ -256,11 +256,12 @@ export default function Departments() {
 
               <div className="flex flex-col gap-1 text-xs text-right w-full sm:w-auto">
                 <p className="text-slate-300">
-                  📞 Contact: <span className="text-white hover:text-amber-300 transition-colors">{selectedDept.hodContact}</span>
+                  📞 Contact: <span className="text-white">{selectedDept.hodContact}</span>
                 </p>
                 <p className="text-slate-300">
-                  ✉️ Email: <span className="text-white hover:text-amber-300 transition-colors">{selectedDept.email}</span>
+                  ✉️ Email: <span className="text-white">{selectedDept.email}</span>
                 </p>
+                <p className="text-[10px] text-slate-400 italic">Placeholder contact details for this demo</p>
               </div>
             </div>
           </div>

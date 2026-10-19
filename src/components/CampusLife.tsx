@@ -137,20 +137,20 @@ export default function CampusLife() {
 
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
-                  <div className="text-xl font-black text-slate-900">45,000+</div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Printed Volumes</div>
+                  <div className="text-xl font-black text-slate-900">Textbooks</div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Reference Collection</div>
                 </div>
                 <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
-                  <div className="text-xl font-black text-slate-900">120+</div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Print Journals</div>
+                  <div className="text-xl font-black text-slate-900">Journals</div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Technical Periodicals</div>
                 </div>
                 <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
                   <div className="text-xl font-black text-slate-900">DELNET</div>
                   <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">E-subscription</div>
                 </div>
                 <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
-                  <div className="text-xl font-black text-slate-900">200+</div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Student Capacity</div>
+                  <div className="text-xl font-black text-slate-900">Reading Hall</div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Quiet Study Space</div>
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function CampusLife() {
                 Connected Transport Fleets
               </h3>
               <p className="text-sm text-slate-600 mt-3 leading-relaxed">
-                Connecting students from far and wide. VREC operates an elegant transit network of 15+ premium college buses threading diverse nodes of Nizamabad, Armoor, Bodhan, and adjacent centers safely.
+                Connecting students from far and wide. College buses link the campus with Nizamabad, Armoor, Bodhan and nearby towns.
               </p>
 
               <div className="mt-5 bg-emerald-50 rounded-lg p-4 text-xs font-semibold text-emerald-900 border border-emerald-200">
@@ -259,7 +259,7 @@ export default function CampusLife() {
               </p>
               
               <div className="text-xs text-rose-800 font-bold border-l-4 border-rose-600 pl-3">
-                ⛹️ Gym facility with standard weight plates, benches, and dumbbells is available under the guidance of Physical Directress Mrs. G. Kavitha.
+                ⛹️ Gym facility with standard weight plates, benches, and dumbbells is available under the guidance of the Physical Education department.
               </div>
             </div>
           </div>
